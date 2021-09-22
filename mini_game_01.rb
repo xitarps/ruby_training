@@ -28,6 +28,10 @@ def let_player_try_to_guess(secret_number)
       puts 'You won!!'
       break
     end
+    if user_input != secret_number and count == attempts_limit
+      puts "You lose... the number was: #{secret_number}"
+      break
+    end
     puts 'The number was incorect...  secret number is bigger :(' if user_input < secret_number
     puts 'The number was incorect... secret number is smaller :(' if user_input > secret_number
     puts "\n" * 2
