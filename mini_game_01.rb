@@ -1,4 +1,13 @@
 puts 'welcome to guess game'
 puts 'whats your name?'
 name = gets.chomp
-puts "Let's start the game,#{name}"
+puts "Let\'s start the game, #{name}"
+puts "\n" * 2
+puts 'picking a number between 0 and 200 so you can try to guess...'
+secret_number = 175
+puts 'all set... how about taking a try?'
+puts "\n" * 2
+puts 'first try'
+puts 'enter a number'
+user_input = gets.chomp.to_i
+puts "lets see if you\'re right (your number: #{user_input})"
