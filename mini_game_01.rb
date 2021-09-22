@@ -11,3 +11,19 @@ puts 'first try'
 puts 'enter a number'
 user_input = gets.chomp.to_i
 puts "lets see if you\'re right (your number: #{user_input})"
+puts 'You won!!' if user_input == secret_number
+puts 'The number was incorect... :(' if user_input != secret_number
+puts "\n" * 2
+puts 'second try'
+puts 'enter a number'
+user_input = gets.chomp.to_i
+puts "lets see if you\'re right (your number: #{user_input})"
+puts 'You won!!' if user_input == secret_number
+puts 'The number was incorect... :(' if user_input != secret_number
+puts "\n" * 2
+puts 'last try'
+puts 'enter a number'
+user_input = gets.chomp.to_i
+puts "lets see if you\'re right (your number: #{user_input})"
+puts 'You won!!' if user_input == secret_number
+puts 'The number was incorect... :(' if user_input != secret_number
